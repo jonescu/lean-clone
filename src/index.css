@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-  font-family: Poppins, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --lean-red: #BA2324;
 }
 
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Home component */
 .home {
   background-image: url("https://leanexcellence.ca/wp-content/uploads/2022/06/download.png");
   height: 100vh;
@@ -16,24 +23,71 @@ body {
   color: #fff;
 }
 
-.nav-container {
+/* Top Banner component*/
+.banner-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1400px;
-  margin: 1rem auto 0 auto;
-  padding: 0 1rem;
+  margin: 10px auto 5px auto;
+  font-family: inherit;
 }
 
 .contact-info {
   display: flex;
   justify-content: space-between;
-  min-width: 600px;
+  min-width: 630px;
 }
 
-.nav-container > .social-icons ul {
+.contact-info > p .font-awesome {
+   color: var(--lean-red);
+}
+
+.banner-container ul {
   display: flex;
+  justify-content: space-between;
+  min-width: 100px;
 }
 
-.nav-container > .social-icons ul li {
+.banner-container > .social-icons ul li {
   list-style: none;
+  font-size: 1.5rem;
+}
+
+.banner-container > .social-icons ul li:hover {
+  color: var(--lean-red);
+  cursor: pointer;
+}
+
+
+/* Nav component */
+.nav-container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.nav-container img {
+  height: 80px;
+  width: 150px;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container ul li {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.nav-container ul li:hover {
+  background-color: white;
+  color: #333;
+  cursor: pointer;
 }
