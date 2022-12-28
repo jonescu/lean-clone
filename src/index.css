@@ -6,4 +6,34 @@
 
 body {
   min-height: 100vh;
+  font-family: Poppins, sans-serif;
+}
+
+.home {
+  background-image: url("https://leanexcellence.ca/wp-content/uploads/2022/06/download.png");
+  height: 100vh;
+  overflow: scroll;
+  color: #fff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 1rem auto 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
+}
+
+.nav-container > .social-icons ul {
+  display: flex;
+}
+
+.nav-container > .social-icons ul li {
+  list-style: none;
 }
