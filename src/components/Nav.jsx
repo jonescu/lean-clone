@@ -5,12 +5,12 @@ function Nav() {
     <div className='nav-container'>
       <img src="https://leanexcellence.ca/wp-content/uploads/2022/03/logo.png" alt="" />
       <ul>
-        <li>Home</li>
-        <li>Training</li>
-        <li>Consulting</li>
-        <li>Team</li>
-        <li>Sigma Work Force</li>
-        <li>Contact</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Consulting</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sigma Work Force</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   )
