@@ -78,12 +78,13 @@ body {
 .nav-container ul {
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .nav-container ul li {
   padding: 1rem;
   text-transform: uppercase;
+  transition: 0.5s ease background-color;
 }
 
 .nav-container ul li:hover {
