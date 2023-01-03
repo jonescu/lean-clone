@@ -13,13 +13,14 @@
 body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  overflow: scroll;
 }
 
 /* Home component */
 .home {
   background-image: url("https://leanexcellence.ca/wp-content/uploads/2022/06/download.png");
   height: 100vh;
-  overflow: scroll;
   color: #fff;
 }
 
@@ -54,8 +55,9 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
-  margin: 10px auto 5px auto;
+  margin: 0 auto;
   font-family: inherit;
+  padding: 10px 0 5px 0;
 }
 
 .contact-info {
@@ -141,4 +143,9 @@ body {
   text-decoration: none;
   color: white;
   padding: 0.4rem 0.6rem;
+}
+
+/* Section-two */
+.section-two {
+  display: flex;
 }
