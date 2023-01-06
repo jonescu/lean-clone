@@ -31,14 +31,15 @@ body {
 }
 
 .home h1, .home button {
-  margin-left: 250px;
+  margin-left: 150px;
 }
 
 .home h1 {
-  font-size: 80px;
-  width: 600px;
+  font-size: 100px;
+  width: 800px;
   margin-top: 100px;
   font-weight: 400;
+  line-height: 110px;
 }
 
 .home button {
@@ -163,6 +164,7 @@ body {
   display: grid;
   grid-template-columns: 60% 40%;
   height: 100vh;
+  background-color: var(--background-white);
 }
 
 .section-two .welcome-section {
@@ -206,4 +208,75 @@ body {
 
 .section-two .welcome-section > .testimonial > p:nth-last-of-type(-n+2):not(:first-of-type) {
   font-weight: bold;  
+}
+
+/* Section Three - Our Philosophy */
+
+.section-three {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-white);
+}
+
+.section-three .philosophy-heading {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  max-width: 1000px;
+}
+
+.section-three .philosophy-heading h1 {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.section-three .philosophy-heading p {
+  font-size: 23px;
+  font-style: italic;
+  font-family: var(--paragraph-text);
+  margin: 1rem 0;
+}
+
+.section-three .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 1300px;
+  margin-top: 50px;
+}
+
+.section-three .card-container .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #999;
+  max-height: 400px;
+  max-width: 370px;
+}
+
+.section-three .card-container .card img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section-three .card-container .card > .card-text {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.section-three .card-container .card > .card-text h3 {
+  text-align: center;
+  font-family: var(--header-text);
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.section-three .card-container .card > .card-text p {
+  font-weight: 500;
+  font-family: var(--paragraph-text);
+
 }

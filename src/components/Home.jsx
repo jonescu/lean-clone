@@ -32,20 +32,28 @@ function Home() {
           <h1>Our Philosophy</h1>
           <p>We believe every company has three dimensions of performance, which impact the growth, efficiency and core values of each organization.</p>
         </div>
-        <div className="card">
-          <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/3.png" alt="" />
-          <h3>Culture & Growth</h3>
-          <p>Enabling clarity and employee development within your organization will maintain and level your overall company visions, goals and strategy.</p>
-        </div>
-        <div className="card">
-          <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/2-1.png" alt="" />
-          <h3>Strategies & Systems</h3>
-          <p>Using strategies and systems within all levels of management and employees can expand opportunities for growth, quality and productivity.</p>
-        </div>
-        <div className="card">
-          <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/1-1.png" alt="" />
-          <h3>Data & Matrix</h3>
-          <p>Data flow will provide you more control within your business. Allowing you to be enabled and empowered as the company grows and will maintain engagement at the employee level.</p>
+        <div className="card-container">
+          <div className="card">
+            <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/3.png" alt="" />
+            <div className="card-text">
+              <h3>Culture & Growth</h3>
+              <p>Enabling clarity and employee development within your organization will maintain and level your overall company visions, goals and strategy.</p>
+            </div>
+          </div>
+          <div className="card">
+            <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/2-1.png" alt="" />
+            <div className="card-text">
+              <h3>Strategies & Systems</h3>
+              <p>Using strategies and systems within all levels of management and employees can expand opportunities for growth, quality and productivity.</p>
+            </div>
+          </div>
+          <div className="card">
+            <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/1-1.png" alt="" />
+            <div className="card-text">
+              <h3>Data & Matrix</h3>
+              <p>Data flow will provide you more control within your business. Allowing you to be enabled and empowered as the company grows and will maintain engagement at the employee level.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="section-four">
