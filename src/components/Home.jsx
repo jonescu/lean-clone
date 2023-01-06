@@ -1,8 +1,11 @@
 import React from 'react'
 import Banner from './Banner'
 import Nav from './Nav'
+import Carousel from './Carousel'
 
 function Home() {
+  const clients = ['https://leanexcellence.ca/wp-content/uploads/2022/05/logo3.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo4.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo5.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo6.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo7.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo8.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo9.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo10.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo11.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo12.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo13.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo1.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo2.png', 'https://leanexcellence.ca/wp-content/uploads/2022/08/1-3.png', 'https://leanexcellence.ca/wp-content/uploads/2022/08/2-3.png']
+
   return (
     <>
       <div className='home'>
@@ -17,7 +20,7 @@ function Home() {
         <div className="welcome-section">
           <h2>Welcome to Lean Excellence Canada</h2>
           <p>Over the years our consultants have been facilitating change in organizations through process improvements, developing procedures, and providing customized training to fit the needs of our clients. We pride ourselves on the development of strategic plans and being experts in execution and implementation.</p>
-          <p>Our team holds extensive experience in business and management consulting, in various industries such as: Manufacturing, Health Care, Supply Change Management, Logistics, Health & Safety, and Human Resource Management. Through our experiences, we understand the challenges that many owners, managers, and supervisors face, in day-to-day and big-picture operations.</p>
+          <p>Our team holds extensive experience in business and management consulting, in various industries   such as: Manufacturing, Health Care, Supply Change Management, Logistics, Health & Safety, and Human Resource Management. Through our experiences, we understand the challenges that many owners, managers, and supervisors face, in day-to-day and big-picture operations.</p>
           <div className='testimonial'>
             <p>“I worked with Lean Excellence for the first time a few years back. They were able to streamline my production process and increase my efficiency by 30% within 6 months.”</p>
             <p>Tony C.</p>
@@ -58,9 +61,7 @@ function Home() {
       </div>
       <div className="section-four">
         <h1>Our Clients</h1>
-        <div className='carousel'>
-          <img src="" alt="" />
-        </div>
+        <Carousel images={clients}/>
       </div>
       <div className="section-five">
         <img src="" alt="" />

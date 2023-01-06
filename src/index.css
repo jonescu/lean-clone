@@ -197,7 +197,7 @@ body {
   background-color: var(--lean-red);
   height: 200px;
   color: var(--background-white);
-  border-radius: 10px;
+  border-radius: 20px;
   border: 5px solid var(--lean-yellow);
   padding: 1rem;
 }
@@ -213,7 +213,7 @@ body {
 /* Section Three - Our Philosophy */
 
 .section-three {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   background-color: var(--background-white);
@@ -278,5 +278,32 @@ body {
 .section-three .card-container .card > .card-text p {
   font-weight: 500;
   font-family: var(--paragraph-text);
+}
 
+.section-four {
+  height: 100vh;
+  background-color: var(--background-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.section-four h1 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.section-four .carousel {
+  height: 350px;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+.section-four .carousel img {
+  height: 130px;
+  width: 326px;
 }
