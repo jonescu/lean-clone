@@ -6,14 +6,6 @@ function Carousel(props) {
   const totalImages = images.length;
 
   function goToPrevSlide() {
-    setCurrentIndex((currentIndex - 1 + totalImages) % totalImages);
-  }
-
-  function goToNextSlide() {
-    setCurrentIndex((currentIndex + 1) % totalImages);
-  }
-
-  function goToPrevSlide() {
     setCurrentIndex((currentIndex - 3 + totalImages) % totalImages);
   }
 
