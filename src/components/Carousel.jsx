@@ -15,11 +15,26 @@ function Carousel(props) {
 
   return (
     <div className="carousel">
-      <button onClick={goToPrevSlide}>Prev</button>
+      <div className="images">
       {images.slice(currentIndex, currentIndex + 3).map((image) => (
         <img src={image} alt="" key={image} />
       ))}
-      <button onClick={goToNextSlide}>Next</button>
+      </div>
+      <div className="carousel-btns">
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn active"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+        <div className="carousel-btn"></div>
+      </div>
     </div>
   );
 

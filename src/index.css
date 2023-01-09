@@ -301,6 +301,46 @@ body {
   margin: 0 auto;
   display: flex;
   margin-top: 40px;
+  flex-direction: column;
+}
+
+.section-four .carousel > .carousel-btns {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section-four .carousel > .carousel-btns > .carousel-btn {
+  height: 12px;
+  width: 12px;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+  margin: 10px 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* .section-four .carousel .carousel-btns .carousel-btn.active {
+  
+} */
+
+.section-four .carousel > .carousel-btns > .carousel-btn::after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #E2E2E2;
+  left: -9px;
+  top: -9px;
+  display: none;
+}
+
+.section-four .carousel > .carousel-btns > .carousel-btn.active::after  {
+  display: inline;
 }
 
 .section-four .carousel img {
