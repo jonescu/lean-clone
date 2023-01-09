@@ -5,12 +5,15 @@ function Carousel(props) {
   const { images } = props;
   const totalImages = images.length;
 
-  function goToPrevSlide() {
-    setCurrentIndex((currentIndex - 3 + totalImages) % totalImages);
-  }
-
-  function goToNextSlide() {
-    setCurrentIndex((currentIndex + 3) % totalImages);
+  function changeImage(e, idx) {
+    setCurrentIndex(idx)
+    const carouselBtns = document.querySelectorAll('.carousel-btn')
+    carouselBtns.forEach(btn => {
+      if(btn.classList.contains('active')) {
+        btn.classList.remove('active')
+      }
+    })
+    e.target.classList.add('active')
   }
 
   return (
@@ -21,19 +24,9 @@ function Carousel(props) {
       ))}
       </div>
       <div className="carousel-btns">
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn active"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
-        <div className="carousel-btn"></div>
+        {images.map((img, idx) => (
+          <div className='carousel-btn' onClick={(e) => changeImage(e, idx)}></div>
+        ))}
       </div>
     </div>
   );

@@ -281,12 +281,12 @@ body {
 }
 
 .section-four {
-  height: 100vh;
+  height: 90vh;
   background-color: var(--background-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: -150px;
 }
 
 .section-four h1 {
