@@ -297,11 +297,26 @@ body {
 
 .section-four .carousel {
   height: 350px;
-  width: auto;
+  width: 1100px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   flex-direction: column;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.section-four .carousel .image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+  justify-content: flex-end;
 }
 
 .section-four .carousel > .carousel-btns {
@@ -322,10 +337,6 @@ body {
   position: relative;
 }
 
-/* .section-four .carousel .carousel-btns .carousel-btn.active {
-  
-} */
-
 .section-four .carousel > .carousel-btns > .carousel-btn::after {
   content: '';
   position: absolute;
@@ -344,6 +355,7 @@ body {
 }
 
 .section-four .carousel img {
-  height: 130px;
-  width: 326px;
+  height: 200px;
+  width: 334px;
+  object-fit: contain;
 }
