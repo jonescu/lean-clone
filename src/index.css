@@ -310,6 +310,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
+  position: relative;
 }
 
 .section-four .carousel .image-container {
@@ -317,6 +318,8 @@ body {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
   justify-content: flex-end;
+  position: absolute;
+  left: 30px;
 }
 
 .section-four .carousel > .carousel-btns {
@@ -325,6 +328,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  position: absolute;
+  top: 250px;
 }
 
 .section-four .carousel > .carousel-btns > .carousel-btn {
@@ -345,9 +350,9 @@ body {
   border-radius: 50%;
   background: transparent;
   border: 1px solid #E2E2E2;
+  display: none;
   left: -9px;
   top: -9px;
-  display: none;
 }
 
 .section-four .carousel > .carousel-btns > .carousel-btn.active::after  {
@@ -358,4 +363,21 @@ body {
   height: 200px;
   width: 334px;
   object-fit: contain;
+  margin: 0 20px;
+}
+
+.section-four .carousel img:nth-child(4) {
+  margin-left: 40px;
+}
+
+.section-four .carousel img:nth-child(7) {
+  margin-left: 110px;
+}
+
+.section-four .carousel img:nth-child(10) {
+  margin-left: 120px;
+}
+
+.section-four .carousel img:nth-child(13) {
+  margin-left: 300px;
 }
