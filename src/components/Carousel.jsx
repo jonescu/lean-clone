@@ -3,23 +3,8 @@ import React, { useRef } from 'react';
 function Carousel(props) {
   const { images } = props;
   let currentIndex = 0;
-  const totalImages = images.length;
   const divRef = useRef()
-  const carouselBtns = document.querySelectorAll('.carousel-btn')
   const slides = [0,1,2,3,4]
-
-  // let interval = setInterval(run, 2000) 
-
-  // function run() {
-  //   currentIndex++
-
-  //   setIndex(currentIndex)
-  // }
-
-  // function resetInterval() {
-  //   clearInterval(interval)
-  //   interval = setInterval(run, 2000)
-  // }
 
   function setIndex (e, idx) {
     currentIndex = idx
@@ -27,15 +12,14 @@ function Carousel(props) {
     if(currentIndex > images.length -1) {
       currentIndex = 0
     }
+    const carouselBtns = document.querySelectorAll('.carousel-btn')
     carouselBtns.forEach(btn => {
       if(btn.classList.contains('active')) {
         btn.classList.remove('active')
       }
     })
     e.target.classList.add('active')
-    // resetInterval()
   }
-
 
   return (
     <div className="carousel">

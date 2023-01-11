@@ -171,7 +171,10 @@ body {
   padding: 1rem;
   max-width: 660px;
   margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
   font-family: var(--paragraph-text);
+  flex-wrap: wrap;
 }
 
 .section-two .welcome-section > h2 {
@@ -181,7 +184,7 @@ body {
 }
 
 .section-two .welcome-section > p {
-  margin: 35px 0;
+  margin: 15px 0;
 }
 
 .section-two .welcome-section > .testimonial > p {
@@ -195,11 +198,13 @@ body {
 
 .section-two .welcome-section > .testimonial {
   background-color: var(--lean-red);
-  height: 200px;
+  max-height: 200px;
+  min-width: 465px;
   color: var(--background-white);
   border-radius: 20px;
   border: 5px solid var(--lean-yellow);
   padding: 1rem;
+  margin-top: 50px;
 }
 
 .section-two .welcome-section > .testimonial > p:first-child {
@@ -213,7 +218,7 @@ body {
 /* Section Three - Our Philosophy */
 
 .section-three {
-  height: 85vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: var(--background-white);
@@ -281,12 +286,12 @@ body {
 }
 
 .section-four {
-  height: 90vh;
+  height: auto;
   background-color: var(--background-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -150px;
+  padding: 50px 0;
 }
 
 .section-four h1 {
@@ -311,6 +316,7 @@ body {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
   position: relative;
+  background-color: white;
 }
 
 .section-four .carousel .image-container {
@@ -375,9 +381,123 @@ body {
 }
 
 .section-four .carousel img:nth-child(10) {
-  margin-left: 120px;
+  margin-left: 130px;
 }
 
 .section-four .carousel img:nth-child(13) {
-  margin-left: 300px;
+  margin-left: 280px;
+}
+
+.section-four .carousel img:nth-child(14) {
+  margin-top: 20px;
+}
+
+/* Section five */
+
+.section-five {
+  display: flex;
+  background-color: var(--background-white);
+  padding-top: 50px;
+}
+
+.section-five img {
+  height: 80vh; 
+  width: 40%;
+}
+
+.section-five .form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.section-five .form-container h1 {
+  margin: 50px 0 20px 0;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.section-five .form-container p {
+  font-style: italic;
+  font-size: 23px;
+  font-weight: 400;
+  font-family: var(--paragraph-text);
+  margin-bottom: 20px;
+}
+
+.section-five form #name {
+  grid-area: name;
+}
+
+.section-five form #email {
+  grid-area: email;
+}
+
+.section-five form #message {
+  grid-area: textarea;
+}
+
+.section-five form #sendmessage {
+  grid-area: sendmessage;
+}
+
+.section-five form {
+  display: grid;
+  grid-template-areas: 
+                      'name phone'
+                      'email email' 
+                      'textarea textarea'
+                      'sendmessage sendmessage';
+  flex-direction: column;
+  /* min-width: 500px; */
+}
+
+.section-five form > * {
+  margin: 1rem 1rem 1rem 0;
+  padding: 10px;
+  border: 1px solid #D6D6D4;
+  background-color: #eeeeec;
+  color: #797575;
+  border-radius: 2px;
+}
+
+.section-five form > *:focus {
+  outline: none;
+}
+
+.section-five .form-container button {
+  width: auto;
+  background-color: var(--lean-red);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--paragraph-text);
+  font-weight: 700;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.section-five .form-container button:hover {
+  transform: scale(1.02) translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.section-five .form-container form *::placeholder {
+  font-family: var(--paragraph-text);
+}
+
+/* media queries */
+
+@media (max-width: 870px) {
+  .section-five {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-five form {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-five img {
+    width: 100vw;
+  }
 }
