@@ -2,6 +2,9 @@ import React from 'react'
 import Banner from './Banner'
 import Nav from './Nav'
 import Carousel from './Carousel'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
   const clients = ['https://leanexcellence.ca/wp-content/uploads/2022/05/logo3.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo4.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo5.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo6.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo7.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo9.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo10.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo11.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo12.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo13.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo1.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo2.png', 'https://leanexcellence.ca/wp-content/uploads/2022/08/1-3.png', 'https://leanexcellence.ca/wp-content/uploads/2022/08/2-3.png']
@@ -80,13 +83,20 @@ function Home() {
       <footer>
         <div className='newsletter'>
           <h1>Subscribe to our Newsletter</h1>
-          <input type="email" />
-          <button>Subscribe</button>
+          <div className="subscribe" >
+            <input type="email" placeholder='Your Email' required/>
+            <button>Subscribe</button>
+          </div>
         </div>
         <div className="connect">
-          <span>&copy; Lean Excellence 2022 | Created by Nick Jonescu</span>
+          <div className='createdBy'>&copy; Lean Excellence 2022 | Created by Nick Jonescu</div>
           <div className='footer-socials'>
-
+            <p>info@leanexcellence.ca</p>
+            <ul>
+              <li><FontAwesomeIcon icon={faFacebook}/></li>
+              <li><FontAwesomeIcon icon={faInstagram}/></li>
+              <li><FontAwesomeIcon icon={faLinkedin}/></li>
+            </ul>
           </div>
         </div>
       </footer>
