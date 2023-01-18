@@ -1,1 +1,1 @@
-Cloning a website to practice react router dom
+Cloning a website to practice using ReactJS, more specifically React Router DOM.

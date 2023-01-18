@@ -101,6 +101,7 @@ body {
 .banner-container > .social-icons ul li {
   list-style: none;
   font-size: 1.5rem;
+  transition: 0.6s color ease;
 }
 
 .banner-container > .social-icons ul li:hover {
@@ -549,7 +550,6 @@ footer .newsletter .subscribe button {
   font-family: var(--paragraph-text);
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.5s ease;
   transition: color 0.5s ease;
   width: 130px;
   font-size: 13.33px;

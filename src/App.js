@@ -1,11 +1,11 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Training from './components/Training'
 import Consulting from './components/Consulting'
 import Sigma from './components/Sigma'
 import Team from './components/Team'
 import Contact from './components/Contact'
-import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
