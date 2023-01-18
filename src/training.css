@@ -1,0 +1,51 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+:root {
+  --background-white: #F7F7F5;
+  --lean-red: #BA2324;
+  --lean-yellow: #EBC100;
+  --header-text: 'DM Serif Display', serif;
+  --paragraph-text: 'Nunito Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--header-text);
+  margin: 0;
+  overflow: scroll;
+}
+
+.training {
+  background: url("https://leanexcellence.ca/wp-content/uploads/2022/04/training-03.png") center center/cover no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+  color: var(--background-white);
+  position: relative;
+}
+
+.training::before {
+  content: '';
+  background-color: rgba(0,0,0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.training h1 {
+  position: relative;
+  text-align: center;
+  font-family: var(--header-text);
+  z-index: 1;
+  font-size: 80px;
+  font-weight: 400;
+}
