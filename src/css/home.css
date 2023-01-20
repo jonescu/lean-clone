@@ -583,7 +583,7 @@ footer .connect .footer-socials {
 footer .connect .footer-socials {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 footer .connect .footer-socials p {

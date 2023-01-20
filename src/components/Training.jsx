@@ -15,22 +15,24 @@ function Training() {
       <h3>FIND OUT HOW TO GET $10,000 PER EMPLOYEE IN GOVERNMENT GRANTS</h3>
       <div className="training-grid">
         <div className="programs">
-          <p>Training Programs</p>
-          <ul>
-            <li>Leadership Training</li>
-            <li>Lean Six Sigma Training (White, Yellow, Green and Black Belt)</li>
-            <li>Value Stream Management</li>
-            <li>Project Management</li>
-            <li>Team Building Training</li>
-            <li>Health and Safety Training</li>
-            <li>Management Training</li>
-            <li>PLUS over 160 customized training programs available</li>
-          </ul>
+          <div className="programs-list">
+            <p className='training-header'>Training Programs</p>
+            <ul>
+              <li>Leadership Training</li>
+              <li>Lean Six Sigma Training (White, Yellow, Green and Black Belt)</li>
+              <li>Value Stream Management</li>
+              <li>Project Management</li>
+              <li>Team Building Training</li>
+              <li>Health and Safety Training</li>
+              <li>Management Training</li>
+              <li>PLUS over 160 customized training programs available</li>
+            </ul>
+          </div>
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/dylan-gillis-KdeqA3aTnBY-unsplash-1920x1280.jpg" alt="" />
         </div>
         <div className="benefits">
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/brooke-cagle-uHVRvDr7pg-unsplash-1920x1280.jpg" alt="" />
-          <p>Benefits of Training</p>
+          <p className='training-header'>Benefits of Training</p>
           <ul>
             <li>Increase Productivity</li>
             <li>Retain Your People</li>
@@ -43,13 +45,13 @@ function Training() {
         </div>
         <div className="vsm">
           <span>NEW</span>
-          <p>Value Stream Management Program (VSM)</p>
+          <p className='training-header'>Value Stream Management Program (VSM)</p>
           <p>The Value Stream Manager within our customized value stream management project the Value Stream Manager will learn how to increase the ratio of value to non-value by eliminating waste in overall supply change by deploying lean methodologies. Practicing value stream management builds a customer-focused and continuous improvement culture.</p>
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/sincerely-media-dGxOgeXAXm8-unsplash-1920x1280.jpg" alt="" />
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/06/New-Project-1.jpg" alt="" />
-          <p>Benefits of VSM Program</p>
+          <p className='training-header'>Benefits of VSM Program</p>
           <p>When you start to implement practices from Value Stream Management the benefits will start to flow into the overall organization. The practice of consistently gathering data allows you to track performance over time and make your pipeline efficient.</p>
-          <p>VSM Program Details</p>
+          <p className='training-header'>VSM Program Details</p>
           <ul>
             <li>Effective Leadership</li>
             <li>Change Management</li>
