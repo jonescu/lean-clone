@@ -3,8 +3,6 @@ import Banner from './Banner'
 import Nav from './Nav'
 import Carousel from './Carousel'
 import Footer from './Footer'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function Home() {
   const clients = ['https://leanexcellence.ca/wp-content/uploads/2022/05/logo3.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo4.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo5.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo6.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo7.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo9.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo10.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo11.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo12.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo13.png', 'https://leanexcellence.ca/wp-content/uploads/2022/05/logo1.png','https://leanexcellence.ca/wp-content/uploads/2022/05/logo2.png', 'https://leanexcellence.ca/wp-content/uploads/2022/08/1-3.png', 'https://leanexcellence.ca/wp-content/uploads/2022/08/2-3.png']

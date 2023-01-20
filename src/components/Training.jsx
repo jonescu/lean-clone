@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from './Banner'
 import Nav from './Nav'
 import Footer from './Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquareCheck } from '@fortawesome/free-solid-svg-icons'
 
 function Training() {
   return (
@@ -18,30 +20,32 @@ function Training() {
           <div className="programs-list">
             <p className='training-header'>Training Programs</p>
             <ul>
-              <li>Leadership Training</li>
-              <li>Lean Six Sigma Training (White, Yellow, Green and Black Belt)</li>
-              <li>Value Stream Management</li>
-              <li>Project Management</li>
-              <li>Team Building Training</li>
-              <li>Health and Safety Training</li>
-              <li>Management Training</li>
-              <li>PLUS over 160 customized training programs available</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Leadership Training</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Lean Six Sigma Training (White, Yellow, Green and Black Belt)</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Value Stream Management</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Project Management</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Team Building Training</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Health and Safety Training</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Management Training</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>PLUS over 160 customized training programs available</li>
             </ul>
           </div>
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/dylan-gillis-KdeqA3aTnBY-unsplash-1920x1280.jpg" alt="" />
         </div>
         <div className="benefits">
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/brooke-cagle-uHVRvDr7pg-unsplash-1920x1280.jpg" alt="" />
-          <p className='training-header'>Benefits of Training</p>
-          <ul>
-            <li>Increase Productivity</li>
-            <li>Retain Your People</li>
-            <li>Nurture Future Leaders</li>
-            <li>Increase Employee Engagement</li>
-            <li>Implement An Effective Leadership Style</li>
-            <li>Make Better Business Decisions</li>
-          </ul>
-          <button>Contact us to find your training solution!</button>
+          <div className="benefits-list">
+            <p className='training-header'>Benefits of Training</p>
+            <ul>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Increase Productivity</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Retain Your People</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Nurture Future Leaders</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Increase Employee Engagement</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Implement An Effective Leadership Style</li>
+              <li><FontAwesomeIcon icon={faSquareCheck} className='fa-check'/>Make Better Business Decisions</li>
+            </ul>
+            <button>Contact us to find your training solution!</button>
+          </div>
         </div>
         <div className="vsm">
           <span>NEW</span>
