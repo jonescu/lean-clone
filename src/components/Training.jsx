@@ -16,7 +16,6 @@ function Training() {
       <p>Our customized on-site training programs are a cost-effective way to train employees on your schedule. Training on-site minimizes the cost-per-participant, reduces travel expenses, and ensures that the content is specific to your exact needs.</p>
       <h3>FIND OUT HOW TO GET $10,000 PER EMPLOYEE IN GOVERNMENT GRANTS</h3>
       <div className="training-grid">
-        <div className="programs">
           <div className="programs-list">
             <p className='training-header'>Training Programs</p>
             <ul>
@@ -31,8 +30,6 @@ function Training() {
             </ul>
           </div>
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/dylan-gillis-KdeqA3aTnBY-unsplash-1920x1280.jpg" alt="" />
-        </div>
-        <div className="benefits">
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/brooke-cagle-uHVRvDr7pg-unsplash-1920x1280.jpg" alt="" />
           <div className="benefits-list">
             <p className='training-header'>Benefits of Training</p>
@@ -46,44 +43,47 @@ function Training() {
             </ul>
             <button>Contact us to find your training solution!</button>
           </div>
-        </div>
         <div className="vsm">
           <span>NEW</span>
           <p className='training-header'>Value Stream Management Program (VSM)</p>
-          <p>The Value Stream Manager within our customized value stream management project the Value Stream Manager will learn how to increase the ratio of value to non-value by eliminating waste in overall supply change by deploying lean methodologies. Practicing value stream management builds a customer-focused and continuous improvement culture.</p>
+          <p className='vsm-text'>The Value Stream Manager within our customized value stream management project the Value Stream Manager will learn how to increase the ratio of value to non-value by eliminating waste in overall supply change by deploying lean methodologies. Practicing value stream management builds a customer-focused and continuous improvement culture.</p>
+        </div>
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/sincerely-media-dGxOgeXAXm8-unsplash-1920x1280.jpg" alt="" />
           <img src="https://leanexcellence.ca/wp-content/uploads/2022/06/New-Project-1.jpg" alt="" />
-          <p className='training-header'>Benefits of VSM Program</p>
-          <p>When you start to implement practices from Value Stream Management the benefits will start to flow into the overall organization. The practice of consistently gathering data allows you to track performance over time and make your pipeline efficient.</p>
-          <p className='training-header'>VSM Program Details</p>
-          <ul>
-            <li>Effective Leadership</li>
-            <li>Change Management</li>
-            <li>Motivating Your Employees</li>
-            <li>Team Building</li>
-            <li>Art of Delegation</li>
-            <li>Conflict Resolution</li>
-            <li>Art of Negotiation</li>
-            <li>Managing Performance</li>
-            <li>Selection & Retention of Talent</li>
-            <li>Time Management</li>
-            <li>Persuasive and Effective Communication</li>
-            <li>Managing Across Cultures</li>
-            <li>Introduction To Lean Six Sigma</li>
-            <li>Defining Problems and Projects</li>
-            <li>Facilitation Skills for Lean</li>
-            <li>Process Thinking & Mapping</li>
-            <li>Data Collection & Analysis</li>
-            <li>Statistical Process Control</li>
-            <li>Analyzing for Root Cause</li>
-            <li>Improving Process & Control</li>
-            <li>Introduction to Lean</li>
-            <li>Lean Tools & Concepts</li>
-            <li>Lean Organization</li>
-            <li>Building a VSM</li>
-          </ul>
-          <button>Contact Us To Learn More</button>
-        </div>
+          <div className='vsm-info'>
+            <p className='training-header'>Benefits of VSM Program</p>
+            <p>When you start to implement practices from Value Stream Management the benefits will start to flow into the overall organization. The practice of consistently gathering data allows you to track performance over time and make your pipeline efficient.</p>
+            <p className='training-header'>VSM Program Details</p>
+            <ul className='vsm-list'>
+              <li>Effective Leadership</li>
+              <li>Change Management</li>
+              <li>Motivating Your Employees</li>
+              <li>Team Building</li>
+              <li>Art of Delegation</li>
+              <li>Conflict Resolution</li>
+              <li>Art of Negotiation</li>
+              <li>Managing Performance</li>
+              <li>Selection & Retention of Talent</li>
+              <li>Time Management</li>
+              <li>Persuasive and Effective Communication</li>
+              <li>Managing Across Cultures</li>
+              <li>Introduction To Lean Six Sigma</li>
+              <li>Defining Problems and Projects</li>
+              <li>Facilitation Skills for Lean</li>
+              <li>Process Thinking & Mapping</li>
+              <li>Data Collection & Analysis</li>
+              <li>Statistical Process Control</li>
+              <li>Analyzing for Root Cause</li>
+              <li>Improving Process & Control</li>
+              <li>Introduction to Lean</li>
+              <li>Lean Tools & Concepts</li>
+              <li>Lean Organization</li>
+              <li>Building a VSM</li>
+            </ul>
+            <button>Contact Us To Learn More</button>
+          </div>
+      </div>
+        
         <h3>Lean Six Sigma Training</h3>
         <p>Employees will be introduced to Lean Six Sigma methodologies and will be coached in deployment of these methodologies to bring improvement and efficiencies in the area of Quality, Production and Product development.</p>
         <div className="belts">
@@ -110,7 +110,6 @@ function Training() {
           <button>Contact us to get an optimized quote!</button>
         </div>
         <Footer/>
-      </div>
     </>
   )
 }
