@@ -86,7 +86,7 @@ body {
   grid-template-rows: auto;
   grid-auto-flow: dense;
   padding: 50px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -95,16 +95,16 @@ body {
   height: 100%;
 }
 
-.training-grid p.training-header {
+.training-grid h2 {
   font-family: var(--header-text);
-  font-size: 2rem;
+  font-size: 40px;
   margin-bottom: 1rem;
 }
 
 .training-grid ul {
   list-style: none;
   font-family: var(--paragraph-text);
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 .training-grid ul li {
@@ -120,9 +120,10 @@ body {
   background-color: var(--lean-red);
   color: #fff;
   text-transform: uppercase;
-  margin-top: 1rem;
+  margin-top: 25px;
   font-family: var(--paragraph-text);
   font-weight: 700;
+  border-radius: 5px;
   padding: 1rem;
   border: none;
   cursor: pointer;
@@ -143,7 +144,92 @@ body {
   font-family: var(--paragraph-text);
 }
 
-.training-grid .vsm-text {
+.training-grid .vsm-text, .vsm-info > p {
   font-family: var(--paragraph-text);
+  line-height: 25px;
+}
+
+.training-grid .vsm-info h2 {
+  font-size: 2rem;
+}
+
+.training-grid .vsm-info #vsm-header {
+  margin-top: 2rem;
+}
+
+.training-grid .vsm-lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.training-grid .vsm-lists ul {
+  list-style: disc;
+}
+
+.training-grid .vsm-img {
+  min-height: 680px;
+}
+
+.sigma {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sigma > h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.sigma > p {
+  font-style: italic;
+  font-size: 23px;
+  max-width: 1200px;
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--paragraph-text);
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #999;
+}
+
+.sigma button {
+    width: auto;
+    background-color: var(--lean-red);
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto 25px auto;
+    font-family: var(--paragraph-text);
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+  
+.sigma button:hover {
+    transform: scale(1.02) translateY(-2px);
+    transition: transform 0.5s ease;
+}
+
+.sigma .belts {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 50px;
+  width: 90%;
+  margin: 0 auto;
+  place-items: center;
+}
+
+.sigma .belts > div > p:first-child {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sigma .belts > div > p:nth-child(2) {
+  font-family:  var(--paragraph-text);
   line-height: 25px;
 }
