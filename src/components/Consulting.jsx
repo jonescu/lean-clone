@@ -29,6 +29,10 @@ function Consulting() {
         </div>
         <img src="https://leanexcellence.ca/wp-content/uploads/2022/08/5.png" alt="" />
       </div>
+      <div className="hero">
+        <h2>Execution of Effective Change Management</h2>
+        <p>through creative and well-planned transformation support of Excellence.</p>
+      </div>
       <Footer/>
     </>
   )
