@@ -1,0 +1,94 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+:root {
+  --background-white: #F7F7F5;
+  --lean-red: #BA2324;
+  --lean-yellow: #EBC100;
+  --header-text: 'DM Serif Display', serif;
+  --paragraph-text: 'Nunito Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--header-text);
+  margin: 0;
+  overflow: scroll;
+  background-color: var(--background-white);
+}
+
+/* Hero Image and Text */
+
+h2 {
+  font-family: var(--header-text);
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.consulting {
+  background: url("https://leanexcellence.ca/wp-content/uploads/2020/09/hero_about.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+  color: var(--background-white);
+  position: relative;
+}
+
+.consulting::before {
+  content: '';
+  background-color: rgba(0,0,0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.consulting h1 {
+  position: relative;
+  text-align: center;
+  font-family: var(--header-text);
+  z-index: 1;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.five-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 50px;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.five-step p {
+  font-family: var(--paragraph-text);
+  line-height: 25px;
+  padding-top: 1rem;
+}
+
+.five-step ul {
+  font-family: var(--paragraph-text);
+  list-style: none;
+}
+
+.five-step ul li {
+  padding: 5px 0;
+}
+
+.five-step-list {
+  padding-top: 1rem;
+}
+
+.five-step ul .fa-check {
+  color: var(--lean-red);
+  margin-right: 5px;
+}
