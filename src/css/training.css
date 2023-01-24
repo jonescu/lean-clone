@@ -104,7 +104,6 @@ body {
 .training-grid ul {
   list-style: none;
   font-family: var(--paragraph-text);
-  /* font-size: 1.2rem; */
 }
 
 .training-grid ul li {
@@ -170,6 +169,8 @@ body {
   min-height: 680px;
 }
 
+/* Sigma Work Force */
+
 .sigma {
   width: 100%;
   display: flex;
@@ -212,6 +213,8 @@ body {
     transform: scale(1.02) translateY(-2px);
     transition: transform 0.5s ease;
 }
+
+/* Belt System */
 
 .sigma .belts {
   display: grid;

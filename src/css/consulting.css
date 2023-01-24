@@ -23,19 +23,20 @@ body {
   background-color: var(--background-white);
 }
 
-/* Hero Image and Text */
+/* Broad Classes */
+
+h2, h3 {
+  font-family: var(--header-text);
+  font-weight: 400;
+} 
 
 h2 {
-  font-family: var(--header-text);
   font-size: 44px;
-  font-weight: 400;
 }
 
 h3 {
-  font-family: var(--header-text);
   font-size: 34px;
-  font-weight: 400;
-} 
+}
 
 p, ul {
   font-family: var(--paragraph-text);
@@ -43,15 +44,21 @@ p, ul {
   font-weight: 400;
 }
 
+/* Consulting header and hero image */
+
 .consulting {
   background: url("https://leanexcellence.ca/wp-content/uploads/2020/09/hero_about.jpg") center center/cover no-repeat;
+  position: relative;
+}
+
+.consulting, .hero {
   background-attachment: fixed;
   height: 60vh;
   color: var(--background-white);
   position: relative;
 }
 
-.consulting::before {
+.consulting::before, .hero::before {
   content: '';
   background-color: rgba(0,0,0, 0.3);
   position: absolute;
@@ -70,6 +77,8 @@ p, ul {
   font-size: 80px;
   font-weight: 400;
 }
+
+/* Five step process - Summary*/
 
 .five-step {
   display: grid;
@@ -103,26 +112,13 @@ p, ul {
   margin-right: 5px;
 }
 
+/* Middle hero image */
+
 .hero {
   background: url("https://leanexcellence.ca/wp-content/uploads/2020/09/background_history.jpg") center center/cover no-repeat;
-  background-attachment: fixed;
-  height: 60vh;
-  color: var(--background-white);
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.hero::before {
-  content: '';
-  background-color: rgba(0,0,0, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
 }
 
 .hero h2, .hero p {
@@ -140,6 +136,8 @@ p, ul {
   padding: 0 50px;
   color: #fff;
 }
+
+/* Five Step Process - Grid */
 
 .five-step-grid {
   display: grid;
@@ -163,12 +161,16 @@ p, ul {
   max-width: 200px;
 }
 
+/* Black line after grid */
+
 .hard-line {
   height: 1px;
   width: 1200px;
   background-color: #999;
   margin: 0 auto 50px auto;
 }
+
+/* Services offered */
 
 .services {
   display: grid;
@@ -190,22 +192,22 @@ p, ul {
 }
 
 .services-info button {
-    width: auto;
-    background-color: var(--lean-red);
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 25px;
-    font-family: var(--paragraph-text);
-    font-weight: 700;
-    border-radius: 5px;
-    padding: 1rem;
-    border: none;
-    cursor: pointer;
+  width: auto;
+  background-color: var(--lean-red);
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 25px;
+  font-family: var(--paragraph-text);
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;   
 }
   
 .services-info button:hover {
-    transform: scale(1.02) translateY(-2px);
-    transition: transform 0.5s ease;
+  transform: scale(1.02) translateY(-2px);
+  transition: transform 0.5s ease;
 }
 
 .services img {
