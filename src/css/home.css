@@ -542,7 +542,6 @@ footer .newsletter .subscribe input::placeholder {
   color: #797575;
 }
 
-
 footer .newsletter .subscribe button {
   color: var(--lean-red);
   border-radius: 0 2px 2px 0;
