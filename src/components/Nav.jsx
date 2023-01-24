@@ -9,7 +9,6 @@ function Nav() {
         <Link to='/'>Home</Link>
         <Link to='/Training'>Training</Link>
         <Link to='/Consulting'>Consulting</Link>
-        <Link to='/Sigma'>Sigma</Link>
         <Link to='/Team'>Team</Link>
         <Link to='/Contact'>Contact</Link>
       </nav>

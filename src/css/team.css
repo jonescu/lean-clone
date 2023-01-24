@@ -1,0 +1,108 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+:root {
+  --background-white: #F7F7F5;
+  --lean-red: #BA2324;
+  --lean-yellow: #EBC100;
+  --header-text: 'DM Serif Display', serif;
+  --paragraph-text: 'Nunito Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--header-text);
+  margin: 0;
+  overflow: scroll;
+  background-color: var(--background-white);
+}
+
+.team-hero {
+  background: url("https://leanexcellence.ca/wp-content/uploads/2020/08/inner_image_01_home_02.jpg");
+  position: relative;
+  background-attachment: fixed;
+  height: 60vh;
+  color: var(--background-white);
+  position: relative;
+}
+
+.team-hero::before {
+  content: '';
+  background-color: rgba(0,0,0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.team-hero h1 {
+  position: relative;
+  text-align: center;
+  font-family: var(--header-text);
+  z-index: 1;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.team-hero h1 + p {
+  font-family: var(--paragraph-text);
+  font-size: 23px;
+  font-weight: 500;
+  padding: 50px;
+  max-width: 1200px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, auto);
+  max-width: 80%;
+  margin: 0 auto;
+  row-gap: 1rem;
+  padding: 40px 0;
+}
+
+.team-members .member {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-members .member span {
+  font-family: var(--paragraph-text);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--lean-red);
+}
+
+.team-members img {
+  border-radius: 50%;
+  margin: 10px 40px 0 0;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.team-members .about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.team-members .about-text p {
+  padding-bottom: 1rem;
+  line-height: 24px;
+}

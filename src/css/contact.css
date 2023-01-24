@@ -1,0 +1,161 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+:root {
+  --background-white: #F7F7F5;
+  --lean-red: #BA2324;
+  --lean-yellow: #EBC100;
+  --header-text: 'DM Serif Display', serif;
+  --paragraph-text: 'Nunito Sans', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--header-text);
+  margin: 0;
+  overflow: scroll;
+  background-color: var(--background-white);
+}
+
+.contact {
+  background: url("https://leanexcellence.ca/wp-content/uploads/2020/09/hero_contact.jpg");
+  background-attachment: fixed;
+  height: 60vh;
+  color: var(--background-white);
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  background-color: rgba(0,0,0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.contact h1 {
+  position: relative;
+  text-align: center;
+  font-family: var(--header-text);
+  z-index: 1;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.work-together {
+  display: flex;
+  background-color: var(--background-white);
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-together-info > * {
+  margin: 20px 0;
+}
+
+.work-together-info span {
+  font-family: var(--paragraph-text);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--lean-red);
+  display: block;
+}
+
+.work-together-info p:first-of-type {
+  font-style: italic;
+}
+
+.work-together-info p {
+  font-size: 23px;
+}
+
+.work-together-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.work-together-form h1 {
+  margin: 50px 0 20px 0;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.work-together-form p {
+  font-style: italic;
+  font-size: 23px;
+  font-weight: 400;
+  font-family: var(--paragraph-text);
+  margin-bottom: 20px;
+}
+
+form #name {
+  grid-area: name;
+}
+
+form #email {
+  grid-area: email;
+}
+
+form #message {
+  grid-area: textarea;
+}
+
+form #sendmessage {
+  grid-area: sendmessage;
+}
+
+form {
+  display: grid;
+  grid-template-areas: 
+                      'name phone'
+                      'email email' 
+                      'textarea textarea'
+                      'sendmessage sendmessage';
+  flex-direction: column;
+}
+
+form > * {
+  margin: 1rem 1rem 1rem 0;
+  padding: 10px;
+  border: 1px solid #D6D6D4;
+  background-color: #eeeeec;
+  color: #797575;
+  border-radius: 2px;
+}
+
+form > *:focus {
+  outline: none;
+}
+
+form button {
+  width: auto;
+  background-color: var(--lean-red);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--paragraph-text);
+  font-weight: 700;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: scale(1.02) translateY(-2px);
+  transition: transform 0.5s ease;
+}
+
+form *::placeholder {
+  font-family: var(--paragraph-text);
+}
